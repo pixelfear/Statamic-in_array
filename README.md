@@ -37,5 +37,5 @@ or this:
 {{ endif }}
 ```
 
-Notice when using the plugin method, you need to specify your array as an `option_list`.
+Notice when using the plugin method, you need to specify your array as an `option_list`.  
 Which means `event_days|option_list` will be `Mon|Tue|Wed`.
