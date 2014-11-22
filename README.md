@@ -15,7 +15,7 @@ event_days:
 You can do something like this: (the modifier way)
 
 ```
-{{ if event_day|in_array:Mon }}
+{{ if event_days|in_array:Mon }}
   There's an event on monday.
 {{ endif }}
 ```
@@ -23,7 +23,7 @@ You can do something like this: (the modifier way)
 or this: (the plugin way)
 
 ```
-{{ if {in_array needle="Mon" haystack="{ event_day|option_list }"} }}
+{{ if {in_array needle="Mon" haystack="{ event_days|option_list }"} }}
   There's an event on monday.
 {{ endif }}
 ```
@@ -32,7 +32,7 @@ or this:
 
 
 ```
-{{ if {in_array needle="{ time|format:D }" haystack="{ event_day|option_list }"} }}
+{{ if {in_array needle="{ time|format:D }" haystack="{ event_days|option_list }"} }}
   There's an event today!
 {{ endif }}
 ```
